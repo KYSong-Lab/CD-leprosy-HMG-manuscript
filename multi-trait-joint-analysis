@@ -10,7 +10,7 @@ Leprosy_meta_common_het.out       binary    0.428745     0.00010     Leprosy
 
 mkdir output
 
-./ldsc_preprocess \
+python ldsc_preprocess.py \
  --input input_list.txt \
  --ref-ld-chr eas_w_ld_chr/ \
  --w-ld-chr eas_w_ld_chr/ \
@@ -18,7 +18,7 @@ mkdir output
 
 2) run PLEIO
 
-./pleio \
+python pleio.py \
 --metain input.txt.gz \
 --sg output/sg.txt.gz \
 --ce output/re.txt.gz \
